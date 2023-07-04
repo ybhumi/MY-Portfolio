@@ -1,0 +1,106 @@
+@import url("./../../App.css");
+
+.bg-contact {
+  background-color: white;
+  height: fit-content;
+  color: black;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+.heading{
+  font-size: 50px;
+  font-weight: 700;
+}
+.text{
+  font-size: 28px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 7vh;
+  /* height: fit-content;
+  width: 200vh; */
+  
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  transition-duration: 0.3s;
+  background-color: transparent;
+  border-radius: 1rem;
+}
+
+.contact-section:hover {
+  transform: scale(1.05);
+  transition-duration: 0.3s;
+  /* background-color: var(--grey-bg); */
+  background: linear-gradient(to bottom,#2C3E50 0%, #000000 100%);
+  
+
+}
+
+.contact-icon {
+  margin-right: 1.5vw;
+  color:#84b9ff;
+  font-size: 3rem;
+}
+
+.contact-title {
+  color:#84b9ff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.contact-details {
+  color: var(--text-white);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.contact-btn {
+  margin-top: 15vh;
+  transform: scale(2);
+  position: absolute;
+  top: 100%;
+  left: 45%;
+}
+
+.button-container {
+  position: relative;
+}
+
+@media only screen and (max-width: 775px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-section {
+    padding: .75rem;
+    margin-top: 4vh;
+    width: 90vw;
+  }
+  
+  .contact-section:hover {
+    transform: scale(1.025);
+  }
+
+  .bg-contact {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  /* .contact-btn {
+    margin-top: 10vh;
+    transform: scale(1.5);
+    position: absolute;
+    top: 100%;
+    left: 30%;
+  } */
+  
+}
+
